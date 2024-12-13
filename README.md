@@ -1,14 +1,13 @@
-We are very busy recently. Some projects are closing until December 12th. All codes and experimental pictures will be sorted out before 2024/12/13.
-In this project, I will upload some experimental data and code related to our new work, **SamPose**, for localized evaluation. I believe this work significantly relaxes the prior conditions for object pose estimation, making pose estimation less complex. 
+We are very busy recently. We are currently writing instructions for using the program to ensure that all researchers can run it successfully. All codes will be added after testing.
+In this project, I will upload some experimental data and code related to our new work, **SamPose**. I believe this work significantly relaxes the prior conditions for object pose estimation, making pose estimation less complex. 
+We can simply understand the structure of the method through the following figure:
+[fig1.pdf](https://github.com/user-attachments/files/18123392/fig1.pdf)
+
+
 
 # 1. Prepare
 
-SamPose is trained on the [Google Scanned Object Dataset](https://www.paris.inria.fr/archive_ylabbeprojectsdata/megapose/webdatasets/) and the [MegaDepth-1500V2](https://www.cs.cornell.edu/projects/megadepth/).
-
-Your directory structure should look like this:
-
-
-
+SamPose is trained on the [Google Scanned Object Dataset](https://www.paris.inria.fr/archive_ylabbeprojectsdata/megapose/webdatasets/) and the [MegaDepth-1500V2](https://www.cs.cornell.edu/projects/megadepth/). Your directory structure should look like this:
 `````````MegaPose-Training-Data/
 ├── MegaPose-GSO/
 │   ├── google_scanned_objects/
@@ -36,6 +35,28 @@ Your directory structure should look like this:
         ├── 0001.txt
         └── ...
 `````````
+Some additional datasets need to be downloaded, and you can customize some tests by replacing the corresponding files in the demo. [Linemod].()、[YCBV].() 、[T-LESS].(https://bop.felk.cvut.cz/datasets/#T-LESS) datasets for SamPose. We provide some test examples for each dataset in the damo folder. 
+Each researcher can replace the images and their corresponding files in Linemod, YCBV, T-LESS to implement any test they want.
+**You can experiment with localization by running the following code:**
+# **Visual DINOv2 feature**
+`````````
+python3 visual_dinov2.py
+`````````
+# **Visual Segment Anything Model**
+`````````
+python3 visual_sam.py
+`````````
+# **Visual 3D BBox test**
+`````````
+python3 visual_3dbbox_Linemod.py
+
+python3 visual_3dbbox_YCB-V.py
+
+python3 visual_3dbbox_LT-LESS.py
+`````````
+
+
+
 
 
 
@@ -43,4 +64,4 @@ Your directory structure should look like this:
       
 
 
-**You can experiment with localization by running the following code:**
+
