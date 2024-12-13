@@ -1,10 +1,12 @@
 We are very busy recently. We are currently writing instructions for using the program to ensure that all researchers can run it successfully. All codes will be added after testing.
 In this project, I will upload some experimental data and code related to our new work, **SamPose**. I believe this work significantly relaxes the prior conditions for object pose estimation, making pose estimation less complex. 
 We can simply understand the structure of the method through the following figure:
+
 <img src="https://github.com/user-attachments/assets/62cb56cc-cb68-45ee-be1c-130ac84b03a3" width="50%" />
 #  Prepare
 SamPose is trained on the [Google Scanned Object Dataset](https://www.paris.inria.fr/archive_ylabbeprojectsdata/megapose/webdatasets/) and the [MegaDepth-1500V2](https://www.cs.cornell.edu/projects/megadepth/). Your directory structure should look like this:
-`````````MegaPose-Training-Data/
+`````````
+MegaPose-Training-Data/
 ├── MegaPose-GSO/
 │   ├── google_scanned_objects/
 │   ├── templates/
