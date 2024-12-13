@@ -1,9 +1,13 @@
 We are very busy recently. Some projects are closing until December 12th. All codes and experimental pictures will be sorted out before 2024/12/13.
 In this project, I will upload some experimental data and code related to our new work, **SamPose**, for localized evaluation. I believe this work significantly relaxes the prior conditions for object pose estimation, making pose estimation less complex. 
 
-#1.Prepare
-SamPose is trained on the [Google Scaned Object Dataset ]([http://example.com](https://www.paris.inria.fr/archive_ylabbeprojectsdata/megapose/webdatasets/)) and the [MegaDepth-1500V2 ]([http://example.com](https://www.cs.cornell.edu/projects/megadepth/)).
+# 1. Prepare
+
+SamPose is trained on the [Google Scanned Object Dataset](https://www.paris.inria.fr/archive_ylabbeprojectsdata/megapose/webdatasets/) and the [MegaDepth-1500V2](https://www.cs.cornell.edu/projects/megadepth/).
+
 Your directory structure should look like this:
+
+
 
 `````````MegaPose-Training-Data/
 ├── MegaPose-GSO/
