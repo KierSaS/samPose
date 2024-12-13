@@ -4,8 +4,8 @@ In this project, I will upload some experimental data and code related to our ne
 #1.Prepare
 SamPose is trained on the [Google Scaned Object Dataset ]([http://example.com](https://www.paris.inria.fr/archive_ylabbeprojectsdata/megapose/webdatasets/)) and the [MegaDepth-1500V2 ]([http://example.com](https://www.cs.cornell.edu/projects/megadepth/)).
 Your directory structure should look like this:
-$DATA_DIR/
-MegaPose-Training-Data/
+
+`````````MegaPose-Training-Data/
 ├── MegaPose-GSO/
 │   ├── google_scanned_objects/
 │   ├── templates/
@@ -31,6 +31,8 @@ MegaPose-Training-Data/
         ├── 0000.txt
         ├── 0001.txt
         └── ...
+`````````
+
 
 
 
