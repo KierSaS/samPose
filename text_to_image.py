@@ -1,7 +1,7 @@
 import torch
 import clip
 from PIL import Image
-
+# An attempt to combine text and images
 def generate_image_from_text(text):
     # 加载CLIP模型
     device = "cuda" if torch.cuda.is_available() else "cpu"
