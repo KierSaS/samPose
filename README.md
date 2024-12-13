@@ -3,8 +3,11 @@ In this project, I will upload some experimental data and code related to our ne
 We can simply understand the structure of the method through the following figure:
 
 <img src="https://github.com/user-attachments/assets/62cb56cc-cb68-45ee-be1c-130ac84b03a3" width="50%" />
-#  Prepare
+# Prepare
+
 SamPose is trained on the [Google Scanned Object Dataset](https://www.paris.inria.fr/archive_ylabbeprojectsdata/megapose/webdatasets/) and the [MegaDepth-1500V2](https://www.cs.cornell.edu/projects/megadepth/). Your directory structure should look like this:
+
+
 `````````
 MegaPose-Training-Data/
 ├── MegaPose-GSO/
@@ -33,8 +36,9 @@ MegaPose-Training-Data/
         ├── 0001.txt
         └── ...
 `````````
-Some additional datasets need to be downloaded, and you can customize some tests by replacing the corresponding files in the demo. [Linemod](https://drive.google.com/file/d/1W1puYf21XHWgMxGtTf3La0CUu_GrFMBd/view?usp=drive_link)、[YCBV](https://drive.google.com/file/d/1gukwaUfJ06d9EbmaH8qDqQb7hRzI0PAk/view?usp=drive_link)、[T-LESS](https://bop.felk.cvut.cz/datasets/#T-LESS) datasets for SamPose.
-We provide some test examples for each dataset in the damo folder. 
+
+Some additional datasets need to be downloaded, and you can customize tests by replacing the corresponding files in the demo: [Linemod](https://drive.google.com/file/d/1W1puYf21XHWgMxGtTf3La0CUu_GrFMBd/view?usp=drive_link), [YCBV](https://drive.google.com/file/d/1gukwaUfJ06d9EbmaH8qDqQb7hRzI0PAk/view?usp=drive_link), and [T-LESS](https://bop.felk.cvut.cz/datasets/#T-LESS).
+We provide some test examples for each dataset in the `damo` folder.
 Each researcher can replace the images and their corresponding files in Linemod, YCBV, T-LESS to implement any test they want. As we have added many packages during the development process, you may need to install some additional development packages based on the information during runtime.
 `````````
 pip3 install -r ./requirements.txt
