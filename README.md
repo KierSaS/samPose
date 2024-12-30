@@ -1,5 +1,3 @@
-Some projects need to be concluded and new ones initiated. The code is being tested and uploaded gradually. We are currently writing instructions for using the program to ensure that all researchers can run it successfully. All codes will be added after testing.
-
 In this project, I will upload some experimental data and code related to our new work, **SamPose**. I believe this work significantly relaxes the prior conditions for object pose estimation, making pose estimation less complex. 
 We can simply understand the structure of the method through the following figure:
 
